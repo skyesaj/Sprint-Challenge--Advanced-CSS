@@ -13,14 +13,127 @@
 @footer-font-color: @waterloo;
 
 // Color Vars
-@wild-sand: #F6F6F6;
-@river-bend: #454A59;
-@sea-shell: #F1F1F1;
-@ebony-clay: #23293B;
-@shuttle-gray: #5E6164;
-@porcelain: #F6F7F8;
-@waterloo: #81848E;
-@btn-bg-color: #22283A;
+@wild-sand: #f6f6f6;
+@river-bend: #454a59;
+@sea-shell: #f1f1f1;
+@ebony-clay: #23293b;
+@shuttle-gray: #5e6164;
+@porcelain: #f6f7f8;
+@waterloo: #81848e;
+@btn-bg-color: #22283a;
 @border-real: #dee2e6;
 
 // Mobile var
+@media (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+  .space-images {
+    width: 100%;
+    justify-content: center;
+  }
+  @media (max-width: 500px) {
+    .home .space-images .blast {
+      width: 92%;
+    }
+    header .main {
+      display: flex;
+      width: 100%;
+    }
+  }
+}
+body {
+  width: 100%;
+
+  // nav a {
+  //   font-size: 1rem;
+  //   padding: 1rem;
+  // }
+  @media (max-width: 500px) {
+    .space-nav a {
+      // font-size: 1.5rem;
+      padding-right: 1.6rem;
+      text-decoration: none;
+      // padding: 1.5rem;
+    }
+  }
+  .btn {
+    position: absolute;
+    background: #22283a;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+    width: 100%;
+    height: 6rem;
+  }
+  // .home .walk {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column-reverse;
+  //   position: relative;
+  //   right: 1rem;
+  // }
+  @media (max-width: 500px) {
+    .home .walk .walk-text {
+      width: 124%;
+      padding-top: 2rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .home .walk {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      position: relative;
+      right: 1.1rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .home .walk .walk-img {
+      width: 115%;
+    }
+  }
+  @media (max-width: 500px) {
+    .home .walk .walk-text .btn {
+      background: #22283b;
+      border-radius: 1rem;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      padding: 1.3rem;
+      width: 100%;
+      height: 6rem;
+    }
+    @media (max-width: 500px) {
+      .walk-text {
+        align-items: center;
+      }
+    }
+  }
+  footer {
+    margin: 15%;
+  }
+  .home .walk .walk-text h3 {
+    margin: 5%;
+  }
+
+  .walk-text {
+    width: 70%;
+    margin-right: 39px;
+  }
+
+  .home .walk .walk-text .btn:hover {
+    background: rgb(78, 60, 241);
+  }
+}
